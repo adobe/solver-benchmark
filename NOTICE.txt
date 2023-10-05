@@ -1,0 +1,11 @@
+Benchy
+======
+The following is a list of sources from which code was used/modified in this codebase.
+
+-------------------------------------------------------------------------------
+This codebase contains a modified portion of code from David Robert Nadeau which can be obtained at:
+  * SOURCE:
+    * http://NadeauSoftware.com/
+
+  * LICENSE:
+    * http://creativecommons.org/licenses/by/3.0/deed.en_US

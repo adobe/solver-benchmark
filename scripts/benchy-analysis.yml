@@ -1,0 +1,13 @@
+name: benchy-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.6
+  - msgpack-python
+  - rich
+  - pip
+  - pip:
+    - zstd
+    - bpython
+  - pandas=2.0.2
+  - altair=5.0.1

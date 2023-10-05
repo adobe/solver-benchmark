@@ -1,0 +1,38 @@
+#
+# Copyright 2023 Adobe. All rights reserved.
+# This file is licensed to you under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License. You may obtain a copy
+# of the License at http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software distributed under
+# the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+# OF ANY KIND, either express or implied. See the License for the specific language
+# governing permissions and limitations under the License.
+#
+
+# In order to persistently set default options for your project, copy this file
+# and remove the '.sample' suffix. Then uncomment the relevant options for your
+# project. Note that this file is included before `project(Lagrange)` is defined,
+# so we can use it to define the C and C++ compilers, but some variables such as
+# PROJECT_SOURCE_DIR will not be defined yet. You can use CMAKE_SOURCE_DIR instead.
+
+################################################################################
+# CMake Options
+################################################################################
+
+# Specify a custom install prefix path
+# set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/install CACHE STRING "Install directory used by install().")
+
+# Generates a `compile_commands.json` that can be used for autocompletion
+# set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE BOOL "Enable/Disable output of compile commands during generation.")
+
+# Use a specific C/C++ compiler, e.g. llvm-clang on macOS (so we can use clangd)
+# set(CMAKE_C_COMPILER   "/usr/local/opt/llvm/bin/clang"   CACHE STRING "C compiler")
+# set(CMAKE_CXX_COMPILER "/usr/local/opt/llvm/bin/clang++" CACHE STRING "C++ compiler")
+
+# Set deployment platform for macOS
+# set(CMAKE_OSX_DEPLOYMENT_TARGET 10.12 CACHE STRING "macOS deployment target")
+
+# Always add colored output (e.g. when using Ninja)
+# list(APPEND CMAKE_CXX_FLAGS -fdiagnostics-color=always) # GCC
+# list(APPEND CMAKE_CXX_FLAGS -fcolor-diagnostics) # Clang
